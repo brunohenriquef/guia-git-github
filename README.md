@@ -7,8 +7,8 @@
 # Sumário:
 
 - [1- O que é o Git, Github, e como eles funcionam.](#1:-O-que-é-um-software-de-versionamento?)
-    - [1.1- O que é o Git e como funciona.](##1.1:-Git-é-um-software-de-versionamento:)
-    - [1.2- O que é Github e como funciona.](##1.2:-Github:)
+    - [1.1- O que é o Git e como funciona.](#1.1:-Git-é-um-software-de-versionamento:)
+    - [1.2- O que é Github e como funciona.](#1.2:-Github:)
 - [2- História do Git, Github, e outros softwares de versionamento.](#2:-História-Git-e-Github:)
 - [3- Instalando Git.](#3:-Instalando-Git:)
 - [4- Configurando o Git.](#4:-Configurando-o-Git:)
@@ -140,13 +140,7 @@ Para listarmos todas as configurações do Git podemos usar o comando: `git conf
 
 &nbsp;
 
-
-
-
-
-
-
-# 5: Iniciando um projeto e primeiro commit: (PAREI AQUI)
+# 5: Iniciando um projeto e primeiro commit: 
 
 * Para iniciar um novo projeto (repositório) Git é necessário acessar a pasta dos arquivos que você deseja pelo terminal e digitar o seguinte comando:
    * `git init`
@@ -156,19 +150,19 @@ Para listarmos todas as configurações do Git podemos usar o comando: `git conf
 
 **Importante: Quando iniciamos um repositório Git, no diretório selecionado é criado uma pasta oculta chamada `.git`, nela é onde tudo fica salvo. Você pode acessá-la ativando as pastas ocultas de seu sistema operacional. Se excluirmos a pasta perdemos todo o histórico de nosso projeto, então cuidado.**
 
-* Feito o passo, o Git já estará pronto para ser usado.
+* Feito o passo, o Git já estará pronto para ser usado, abra seu editor de texto na pasta selecionada e comece a trabalhar
 
-* Agora abra seu editor de texto na pasta selecionada e comece a trabalhar.
-* Quando achar que já fez o bastante e gostaria de salvar o estado daquele projeto, abra novamente o terminal.
+* Quando achar que já fez o bastante e gostaria de salvar uma versão deste projeto, abra novamente o terminal.
 
-* Para ver no que você estava mexendo, digite: `git status` 
+* Primeiramente, precisamos ver quais arquivos estavamos mexendo. Digite: `git status` 
    * Você pode perceber que os arquivos aparecerão em vermelho. Primeiramente os arquivos estarão como *untracked*, ou seja, o git não está monitorando as mudanças nestes arquivos. Para resolver este problema temos que *rastreá-los* (*tracked* files), utilizando o comando `git add nomeDoArquivo` (note que você só tera que rastreá-los uma única vez, após isso o Git estará detectando mudanças no arquivo). Depois disto, todas as mudanças continuarão aparecendo em vermelho, com a diferença que agora ele está detectando as mudanças feitas e não se o arquivo é novo ou não.
 
 * Para salvarmos a versão do projeto, faremos algo que se chama **commit**. Fazendo um commit, o Git criará um ponto na história, que poderemos voltar mais adiante.
-   * Antes de fazermos o commit, precisamos indicar ao Git quais arquivos queremos que estejam incluídos nesse ponto da história. Para indicar quais arquivos devemos salvar, é o mesmo comando mostrado acima, digite:
-      * `git add nomeDoArquivo` ou se preferir adicionar todos os arquivos troque o nome do arquivo por um ponto `.`.
-      * Se você já rastreou um arquivo e não fez alterações nele não precisará adicioná-lo duas vezes.
-      * Quando rodamos o comando, colocamos todos os arquivos selecionados em modo de **Staged** (está pronto para ser "commitado").
+
+* Antes de fazermos o commit, precisamos indicar ao Git quais arquivos queremos que estejam incluídos nesse ponto da história. Para indicar quais arquivos devemos salvar, é o mesmo comando mostrado acima, digite:
+   * `git add nomeDoArquivo` ou se preferir adicionar todos os arquivos troque o nome do arquivo por um ponto: `.`.
+   * Se você já rastreou um arquivo e não fez alterações nele não precisará adicioná-lo duas vezes.
+   * Quando rodamos o comando, colocamos todos os arquivos selecionados em modo de **Staged** (está pronto para ser "commitado").
 
 * Agora, tudo que precisamos é literalmente fazer o commit, e para isso usa-se o seguinte comando:
 
@@ -177,19 +171,15 @@ Para listarmos todas as configurações do Git podemos usar o comando: `git conf
 
 * **Ao invés do `-m`, podemos utilizar o `-am`. Com isso, o git irá automaticamente adicionar todos os arquivos modificados no estado *Staged* e fazer o commit, tudo de uma vez (não se esqueça de deixar a mensagem).**
 
-
 * Neste momento já temos nosso primeiro ponto na história do projeto.
 
 * Para ver seus commits já feitos utilize o comando: 
    * `git log`
-      * Notará as datas, a chave do commit, a mensagem, o autor e o e-mail de quem fez.
+      * Você pode notar as datas, a chave do commit, a mensagem, o autor e o e-mail de quem fez.
 
 * Repita o processo quantas vezes achar necessário.
 
-
 * Aprenderemos como voltar versões um pouco mais adiante
-
----
 
 # Enviando seu projeto para o GitHub
 
