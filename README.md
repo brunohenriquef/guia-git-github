@@ -12,7 +12,8 @@
 - [2- História do Git, Github, e outros softwares de versionamento.](#2:-História-Git-e-Github:)
 - [3- Instalando Git.](#3:-Instalando-Git:)
 - [4- Configurando o Git.](#4:-Configurando-o-Git:)
-- [5- Iniciando um projeto e primeiro commit](#5:-Iniciando-um-projeto-e-primeiro-commit:)
+- [5- Iniciando um projeto e primeiro commit.](#5:-Iniciando-um-projeto-e-primeiro-commit:)
+- [6- Enviando seu projeto para o Githb.](#5:-Enviando-seu-projeto-para-o-GitHub:)
 
 #  1: O que é um software de versionamento?
 
@@ -150,7 +151,7 @@ Para listarmos todas as configurações do Git podemos usar o comando: `git conf
 
 **Importante: Quando iniciamos um repositório Git, no diretório selecionado é criado uma pasta oculta chamada `.git`, nela é onde tudo fica salvo. Você pode acessá-la ativando as pastas ocultas de seu sistema operacional. Se excluirmos a pasta perdemos todo o histórico de nosso projeto, então cuidado.**
 
-* Feito o passo, o Git já estará pronto para ser usado, abra seu editor de texto na pasta selecionada e comece a trabalhar
+* Feito o passo, o Git já estará pronto para ser usado, abra seu editor de texto na pasta selecionada e comece a trabalhar.
 
 * Quando achar que já fez o bastante e gostaria de salvar uma versão deste projeto, abra novamente o terminal.
 
@@ -179,50 +180,42 @@ Para listarmos todas as configurações do Git podemos usar o comando: `git conf
 
 * Repita o processo quantas vezes achar necessário.
 
-* Aprenderemos como voltar versões um pouco mais adiante
+* Aprenderemos como voltar versões um pouco mais adiante.
 
-# Enviando seu projeto para o GitHub
+&nbsp;
+
+# 6: Enviando seu projeto para o GitHub:
 
 * Agora que aprendemos a fazer o versionamento local, e você já tem uma versão inicial de seu projeto, estamos prontos para enviá-lo para o repositório remoto (GitHub).
 
 * Vá para seu GitHub e crie um repositório
+   * Se não souber criar um repositório, acesse o link: [Como criar repositórios no Github.](https://docs.github.com/pt/github/getting-started-with-github/quickstart/create-a-repo).
 
-* O próximo passo é o seguinte:
-
-   * Precisamos adicionar ao nosso Git o local onde devemos enviar nosso código. E para isso usamos o comando:
-
-      * `git remote add origin URLdoRepositórioNoGitHub`
-      
-         * Com isso já definimos o local. O **origin** nada mais é que um nome abreviado para quando formos enviar o código utilizarmos ele, mas poderia ser qualquer outro nome (origin é o padrão).
-
-         * Dica: conseguimos ver todos nossos repositórios remotos com o comando `git remote -v`
+* Agora precisamos dizer ao nosso Git o local onde devemos enviar nosso código, e para isso usamos o comando:
+   * `git remote add origin URLdoRepositórioNoGitHub`, e com isso já definimos o local. 
+   * O nome **origin** que demos antes do endereço de nosso repositório remoto nada mais é que um nome abreviado, que como propriamente ja diz, é a **origem**, **repositório remoto raiz** do nosso projeto. Não necessariamente precisamos colocar o nome de origin, fique a sua escolha.
+   * Dica: conseguimos ver todos nossos repositórios remotos com o comando `git remote -v`
    
-   * Agora temos que fazer um **push** (que nada mais é do que literalmente enviar os códigos para o repositório remoto). 
-      * Utilizamos o seguinte comando: 
+* Agora, para definitivamente enviarmos nosso código ao repositório remoto, nós utilizamos algo chamado ***push***.
+   * Utilizamos o seguinte comando: `git push origin`
 
-         * `git push origin`
-            * Neste simples comando acabamos de enviar o nosso código.
-
-   * Espere!
-
-      * Quase esquecemos de uma preciosa parte! Você já deve ter notado que a seguinte mensagem apareceu:
-
-         * ```fatal: The current branch master has no upstream branch. To push the current branch and set the remote as upstream, use git push --set-upstream origin master ```
+* Deu erro?
+   * Você deve ter notado a seguinte mensagem em seu terminal:
+      * ```fatal: The current branch master has no upstream branch. To push the current branch and set the remote as upstream, use git push --set-upstream origin master ```
          
-         * Ele está nos dizendo que precisamos definir nossa **branch** principal (veremos isso mais tarde). 
+   * Ele está nos dizendo que precisamos definir nossa **branch** principal (veremos isso mais tarde). 
          
-         * Podemos ignorar isto por enquanto apenas digitando o que ele pediu:
-
-            * `git push --set-upstream origin master` 
-               * Ou então uma versão mais curta `git push -u origin master`
+   * Podemos ignorar isto por enquanto apenas digitando o que ele pediu:
+      * `git push --set-upstream origin master` 
+         * Ou então uma versão mais curta: `git push -u origin master`
       
-      * Este tipo de mensagem não aparecerá tão cedo até mexermos com branchs
+   * Este tipo de mensagem não aparecerá tão cedo até mexermos com branch's.
 
-      * Então, para dar push apenas utilize o comando mostrado um pouco mais acima `git push origin`
+   * Então, para dar push apenas utilize o comando mostrado um pouco mais acima `git push origin`
 
-      * Ele irá pedir seu nome de usuário GitHub e senha, coloque.
-         * *Dica*: há algo no Git chamado Credential Helper, eu particularmente não uso e NÃO recomendo, pois já tive problemas DEMAIS com isso. Como o nome diz, ele salva seus dados para que não precise ficar repetindo a ação de colocar senha e usuário.
-
+   * Assim que der o comando o Git lhe pedirá nome de usuário e senha.
+      * No momento em que escrevo isso, o Github parou de aceitar a senha de sua conta como credêncial, mudando para um token de acesso controlado e por tempo determinado.
+      * Para aprender a criar o token, acesse: [Como criar um token de acesso Github]
 
 * Agora que já subimos nosso código você pode ir lá conferir.
 
@@ -311,8 +304,9 @@ Para listarmos todas as configurações do Git podemos usar o comando: `git conf
 
 # Fontes
 
-* Curso de Git e GitHub do professor Gustavo Guanabara [Clique aqui para visualizar](https://www.youtube.com/watch?v=xEKo29OWILE&list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
-* Documentação do próprio site do Git [Clique aqui para visualizar](https://git-scm.com/doc)
-* Documentação do site do GitHub [Clique aqui para visualizar](https://docs.github.com/)
+* Curso de Git e GitHub do professor Gustavo Guanabara: [Clique aqui para visualizar](https://www.youtube.com/watch?v=xEKo29OWILE&list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA).
+* Documentação do próprio site do Git: [Clique aqui para visualizar](https://git-scm.com/doc).
+* Documentação do site do GitHub: [Clique aqui para visualizar](https://docs.github.com/).
+* Curso de Git e Github do professor Bonieky Lacerda: [Clique aqui para visualizar](https://www.youtube.com/watch?v=OuOb1_qADBQ).
 
 
