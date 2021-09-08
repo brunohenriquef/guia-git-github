@@ -7,15 +7,17 @@
 # Sumário:
 
 - [1- O que é o Git, Github, e como eles funcionam.](#1:-O-que-é-um-software-de-versionamento?)
-    - [1.1- O que é o Git e como funciona.](#1.1:-Git-é-um-software-de-versionamento:)
-    - [1.2- O que é Github e como funciona.](#1.2:-Github:)
+   - [1.1- O que é o Git e como funciona.](#1.1:-Git-é-um-software-de-versionamento:)
+   - [1.2- O que é Github e como funciona.](#1.2:-Github:)
 - [2- História do Git, Github, e outros softwares de versionamento.](#2:-História-Git-e-Github:)
 - [3- Instalando Git.](#3:-Instalando-Git:)
 - [4- Configurando o Git.](#4:-Configurando-o-Git:)
 - [5- Iniciando um projeto e primeiro commit.](#5:-Iniciando-um-projeto-e-primeiro-commit:)
 - [6- Enviando seu projeto para o Githb.](#5:-Enviando-seu-projeto-para-o-GitHub:)
+- [7- Arquivo README e licenças:](#7:-Arquivo-README-e-Licenças:)
+   - [7.1 Licenças.](#7.1:-Licenças:)
 
-#  1: O que é um software de versionamento?
+# 1: O que é um software de versionamento?
 
 * É um programa que salva todos as versões e estados de seu projeto, monitorando diferenças feitas nos arquivos.
 * Possibilita trabalhar com mais pessoas sem dores de cabeça
@@ -215,63 +217,61 @@ Para listarmos todas as configurações do Git podemos usar o comando: `git conf
 
    * Assim que der o comando o Git lhe pedirá nome de usuário e senha.
       * No momento em que escrevo isso, o Github parou de aceitar a senha de sua conta como credêncial, mudando para um token de acesso controlado e por tempo determinado.
-      * Para aprender a criar o token, acesse: [Como criar um token de acesso Github]
+      * Para aprender a criar o token, acesse: [Como criar um token de acesso Github.](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token)
 
-* Agora que já subimos nosso código você pode ir lá conferir.
+* Credênciais checadas, código subido. Estamos prontos para irmos conferir nosso projeto direto no Github.
 
-   * Acesse seu GitHub e vá em seus repositórios, clique no selecionado e verá todos seus arquivos lá dentro.
+* Acesse seu GitHub e vá em seus repositórios, clique no selecionado e verá todos seus arquivos lá dentro.
 
----
+&nbsp;
 
-# Arquivo README e Licenças
+# 7: Arquivo README e licenças:
 
-* Todo bom repositório que se preze possui instruções de como usar o projeto. Para isso adicionamos um arquivo chamado README, de extensão .md (extensão para linguagem Markdown).
+* Todo bom repositório que se preze possui instruções de como usar o projeto. Para isso adicionamos um arquivo chamado README, de extensão **.md** (extensão para linguagem Markdown).
 
-* Aliás, este estudo que está lendo foi feito todo na área README :)
+* Aliás, este estudo que está lendo foi feito todo na área README.
 
 * O que é a linguagem *Markdown*?
-
    * É uma linguagem de marcação, igual o HTML é.
    * As vantagens do Markdown são: 
       * Ele é mais fácil de aprender e usar, também é mais fácil a leitura do código.
 
 * Crie em sua pasta o arquivo README.md, o GitHub se encarregará de mostrá-lo na primeira página de seu repositório. 
-
    * Utilize este arquivo para descrever seu código, o que ele faz, como usar e outras informações úteis.
-   * Para isso, como eu disse, usamos a linguagem Markdown. Não ensinarei ela aqui pois seria muito complicado, então segue um link de como usar (é simples, eu juro!) [Linguagem Markdown](https://docs.pipz.com/central-de-ajuda/learning-center/guia-basico-de-markdown#open)
+   * Para isso, como eu disse, usamos a linguagem Markdown. Se não conhece nada sobre a linguagem, experimente este link útil de como usar (é simples, eu juro!) [Linguagem Markdown.](https://docs.pipz.com/central-de-ajuda/learning-center/guia-basico-de-markdown#open)
+
+## 7.1: Licenças:
+
+* Além do README, todo bom repositório possui uma licença de uso.
+
+* É com ela que diremos a quem visitar nosso perfil o que podem ou não fazer com o que desenvolvemos.
+
+* Utilizaremos licenças prontas que o próprio GitHub nos oferece:
+   * Vá para seu repositório no GitHub e entre nele.
+   * Crie um novo arquivo (no próprio GitHub, não em sua máquina).
+   * Nomeie ele de LICENSE (exatamente assim).
+   * Logo ao lado aparecerá a opção **Choose a license template**.
+   * Em seguida, escolha um tipo de licença (claro, você terá que ler todas elas para entender o que cada uma propõe).
+   * Logo após, clique em "Review and Submit".
+
+&nbsp;
 
 
-* **Licença**
 
-   * Além do README, todo bom repositório possui uma licença de uso.
 
-   * É com ela que diremos a quem visitar nosso perfil o que podem ou não fazer com o que desenvolvemos.
 
-      * Utilizaremos licenças prontas que o próprio GitHub nos oferece:
 
-         * Vá para seu repositório no GitHub e entre nele
-         * Crie um novo arquivo (no próprio GitHub, não em sua máquina)
-         * Nomeie ele de LICENSE (exatamente assim)
-         * Logo ao lado aparecerá a opção **Choose a license template**
-         * Em seguida, escolha um tipo de licença (claro, você terá que ler todas elas para entender)
-         * Após isso, clique em Review and submit
+# 8: Voltando no tempo: (aqui)
 
-      * Eu encorajo a todos que em seus projetos de fins não monetários, utilize a licença MIT (leia a licença). 
-      * Assim ajudaremos nossa comunidade e incentivaremos mais pessoas a fazerem isso.
+* Como eu disse, a possibilidade de restaurar versões de arquivos é algo poderosíssimo, e uma das principais caractéristicas do Git é exatamente isso.
 
----
----
-
-# Voltando no tempo
-
-* Como eu disse, a possibilidade de restaurar versões de arquivos é algo poderosíssimo, e para isso, vamos realizar os seguintes passos:
-
-* Antes de voltar no tempo, você pode ver as alterações que fez nos arquivos com o comando `git diff` para visualizar todos, ou `git diff nomeDoArquivo`.
+* Voltando no tempo:
+   * Antes de voltar no tempo, você pode ver as alterações que fez nos arquivos com o comando `git diff` para visualizar todos, ou `git diff nomeDoArquivo`.
    * Ou então, se estiver usando o Visual Studio Code, nos ícones da esquerda clique em Source Control. Vá até os arquivos modificados, clique com o direito e depois open changes. Desta forma ele abrirá uma nova aba mostrando todas as alterações de uma maneira visual mais agradável do que o terminal.
 
-   * ## Uma forma de fazer isso:
+* ## Uma forma de fazer isso:
 
-   * Primeiramente digite `git log`, isso irá mostrar todos os commits do projeto.
+* Primeiramente digite `git log`, isso irá mostrar todos os commits do projeto.
    * Se você seguiu a dica de ser simples e direto, saberá o que é cada ponto feito na história.
    * Com o ponto escolhido, copie o *hash* (o grande número depois da palavra commit)
       * Mesmo se ainda estiver em dúvida sobre o que foi alterado, utilize o comando `git show numeroDaHash` que ele te mostrará as mudanças dos arquivos.
@@ -283,18 +283,19 @@ Para listarmos todas as configurações do Git podemos usar o comando: `git conf
    * Voltando ao terminal e digitando `git log`, verá que agora temos um novo commit, descrito como ***This reverts commit numeroDoHashDoCommitAnterior***
    * Você acabou de voltar no tempo. 
 
-   * ## Uma outra forma:
+* ## Uma outra forma:
 
-   * 
+* 
 
-   * ### Mudando mensagem de um commit
+* ### Mudando mensagem de um commit
       
-      * Para mudar uma mensagem feita em um commit existem algumas formas:
-         1. Mudando mensagem do commit mais recente: digite no terminal `git commit --amend`. Isso abrirá o seu editor de texto e lá dentro estará a mensagem de seu commit, substitua ela por sua nova mensagem. Salve e feche o arquivo, dê um `git log` e verá que a mensagem estará alterada.
-         Após isto dê um `push --force` para forçar o push feito no commit antigo.
+* Para mudar uma mensagem feita em um commit existem algumas formas:
+
+1. Mudando mensagem do commit mais recente: digite no terminal `git commit --amend`. Isso abrirá o seu editor de texto e lá dentro estará a mensagem de seu commit, substitua ela por sua nova mensagem. Salve e feche o arquivo, dê um `git log` e verá que a mensagem estará alterada.Após isto dê um `push --force` para forçar o push feito no commit antigo.
          
-         2. Mudando mensagens de commits mais antigos ou vários de uma vez: digite no terminal `git rebase -i HEAD~n` (sendo *n* o número de commits que você quer visualizar contanto do mais recente). Após isso seu editor de texto abrirá, e você notará a palavra **pick** após disso a hash e a mensagem do commit. 
----
+2. Mudando mensagens de commits mais antigos ou vários de uma vez: digite no terminal `git rebase -i HEAD~n` (sendo *n* o número de commits que você quer visualizar contanto do mais recente). Após isso seu editor de texto abrirá, e você notará a palavra **pick** após disso a hash e a mensagem do commit. 
+
+
 
 # Continua!
 
