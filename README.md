@@ -6,8 +6,8 @@
 
 # Sumário:
 
-1. [1- O que é o Git, Github, e como eles funcionam.](#1:-O-que-é-um-software-de-versionamento?)
-   1.1 [1.1- O que é o Git e como funciona.](#1.1:-Git-é-um-software-de-versionamento:)
+- [1- O que é o Git, Github, e como eles funcionam.](#1:-O-que-é-um-software-de-versionamento?)
+   - [1.1- O que é o Git e como funciona.](#1.1:-Git-é-um-software-de-versionamento:)
    - [1.2- O que é Github e como funciona.](#1.2:-Github:)
 - [2- História do Git, Github, e outros softwares de versionamento.](#2:-História-Git-e-Github:)
 - [3- Instalando Git.](#3:-Instalando-Git:)
