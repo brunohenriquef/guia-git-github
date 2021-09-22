@@ -6,25 +6,25 @@
 
 # Sumário:
 
-- [1- O que é o Git, Github, e como eles funcionam.](#1:-O-que-é-um-software-de-versionamento?)
-   - [1.1- O que é o Git e como funciona.](#1.1:-Git-é-um-software-de-versionamento:)
-   - [1.2- O que é Github e como funciona.](#1.2:-Github:)
-- [2- História do Git, Github, e outros softwares de versionamento.](#2:-História-Git-e-Github:)
-- [3- Instalando Git.](#3:-Instalando-Git:)
-- [4- Configurando o Git.](#4:-Configurando-o-Git:)
-- [5- Iniciando um projeto e primeiro commit.](#5:-Iniciando-um-projeto-e-primeiro-commit:)
-- [6- Enviando seu projeto para o Githb.](#5:-Enviando-seu-projeto-para-o-GitHub:)
-- [7- Arquivo README e licenças:](#7:-Arquivo-README-e-Licenças:)
-   - [7.1 Licenças.](#7.1:-Licenças:)
+- [1- O que é o Git, Github, e como eles funcionam.](#O-que-é-um-software-de-versionamento)
+   - [1.1- O que é o Git e como funciona.](#Git-é-um-software-de-versionamento)
+   - [1.2- O que é Github e como funciona.](#Github)
+- [2- História do Git, Github, e outros softwares de versionamento.](#História-Git-e-Github)
+- [3- Instalando Git.](#Instalando-Git)
+- [4- Configurando o Git.](#Configurando-o-Git)
+- [5- Iniciando um projeto e primeiro commit.](#Iniciando-um-projeto-e-primeiro-commit)
+- [6- Enviando seu projeto para o Githb.](#Enviando-seu-projeto-para-o-GitHub)
+- [7- Arquivo README e licenças:](#Arquivo-README-e-Licenças)
+   - [7.1 Licenças.](#Licenças)
 
-# 1: O que é um software de versionamento?
+# O que é um software de versionamento
 
 * É um programa que salva todos as versões e estados de seu projeto, monitorando diferenças feitas nos arquivos.
 * Possibilita trabalhar com mais pessoas sem dores de cabeça
 * Fácil de resolver conflitos de arquivos
 * Oferece segurança e organização
 
-## 1.1: Git é um software de versionamento: 
+## Git é um software de versionamento 
 
 * Ao invés de você fazer uma cópia toda vez que achar que aquela versão está boa, apenas digite uns comandos e ficará salvo na história do projeto.
 
@@ -33,7 +33,7 @@
 * Versionamento local por si só não resolve muita coisa, para isso precisamos enviar nosso código versionado para algum lugar, e este lugar escolhido é o GitHub (também há outras opções como o Bitbucket, Gitlab, etc).
 
 
-## 1.2: GitHub:
+## GitHub
 
 * O GitHub, um repositório remoto (***um lugar para armazenar projetos com Git***), conta com funcionalidades como:
 
@@ -45,7 +45,7 @@
 
 &nbsp;
 
-# 2: História Git e GitHub:
+# História Git e GitHub
 
 * Em 1985 nascia **CVS** (*Concurrent Versions System*), uma famosa ferramenta de versionamento. 
    * Centralizado (precisava de conexão direta com o repositório central para funcionar).
@@ -88,7 +88,7 @@
 
 &nbsp;
 
-# 3: Instalando Git:
+# Instalando Git
 
 * ***Antes de instalar o Git, recomendo instalar o Visual Studio Code da Microsoft. Esse editor nos permitirá ter uma ótima integração com o Git e nos fornecerá ajuda visual para certas questões***
 
@@ -115,7 +115,7 @@
 
 &nbsp;
 
-# 4: Configurando o Git:
+# Configurando o Git
 
 * Abra o Git Bash ou seu terminal.
 
@@ -143,7 +143,7 @@ Para listarmos todas as configurações do Git podemos usar o comando: `git conf
 
 &nbsp;
 
-# 5: Iniciando um projeto e primeiro commit: 
+# Iniciando um projeto e primeiro commit
 
 * Para iniciar um novo projeto (repositório) Git é necessário acessar a pasta dos arquivos que você deseja pelo terminal e digitar o seguinte comando:
    * `git init`
@@ -186,7 +186,7 @@ Para listarmos todas as configurações do Git podemos usar o comando: `git conf
 
 &nbsp;
 
-# 6: Enviando seu projeto para o GitHub:
+# Enviando seu projeto para o GitHub
 
 * Agora que aprendemos a fazer o versionamento local, e você já tem uma versão inicial de seu projeto, estamos prontos para enviá-lo para o repositório remoto (GitHub).
 
@@ -225,7 +225,7 @@ Para listarmos todas as configurações do Git podemos usar o comando: `git conf
 
 &nbsp;
 
-# 7: Arquivo README e licenças:
+# Arquivo README e licenças
 
 * Todo bom repositório que se preze possui instruções de como usar o projeto. Para isso adicionamos um arquivo chamado README, de extensão **.md** (extensão para linguagem Markdown).
 
@@ -240,7 +240,7 @@ Para listarmos todas as configurações do Git podemos usar o comando: `git conf
    * Utilize este arquivo para descrever seu código, o que ele faz, como usar e outras informações úteis.
    * Para isso, como eu disse, usamos a linguagem Markdown. Se não conhece nada sobre a linguagem, experimente este link útil de como usar (é simples, eu juro!) [Linguagem Markdown.](https://docs.pipz.com/central-de-ajuda/learning-center/guia-basico-de-markdown#open)
 
-## 7.1: Licenças:
+## Licenças
 
 * Além do README, todo bom repositório possui uma licença de uso.
 
@@ -261,7 +261,16 @@ Para listarmos todas as configurações do Git podemos usar o comando: `git conf
 
 
 
-# 8: Voltando no tempo: (aqui)
+
+
+
+
+
+
+
+
+
+# Voltando no tempo:
 
 * Como eu disse, a possibilidade de restaurar versões de arquivos é algo poderosíssimo, e uma das principais caractéristicas do Git é exatamente isso.
 
@@ -269,7 +278,7 @@ Para listarmos todas as configurações do Git podemos usar o comando: `git conf
    * Antes de voltar no tempo, você pode ver as alterações que fez nos arquivos com o comando `git diff` para visualizar todos, ou `git diff nomeDoArquivo`.
    * Ou então, se estiver usando o Visual Studio Code, nos ícones da esquerda clique em Source Control. Vá até os arquivos modificados, clique com o direito e depois open changes. Desta forma ele abrirá uma nova aba mostrando todas as alterações de uma maneira visual mais agradável do que o terminal.
 
-* ## Uma forma de fazer isso:
+* ## Uma forma de fazer isso
 
 * Primeiramente digite `git log`, isso irá mostrar todos os commits do projeto.
    * Se você seguiu a dica de ser simples e direto, saberá o que é cada ponto feito na história.
@@ -283,7 +292,7 @@ Para listarmos todas as configurações do Git podemos usar o comando: `git conf
    * Voltando ao terminal e digitando `git log`, verá que agora temos um novo commit, descrito como ***This reverts commit numeroDoHashDoCommitAnterior***
    * Você acabou de voltar no tempo. 
 
-* ## Uma outra forma:
+* ## Uma outra forma
 
 * 
 
@@ -299,7 +308,7 @@ Para listarmos todas as configurações do Git podemos usar o comando: `git conf
 
 # Continua!
 
-### Esse estudo está sendo construido aos poucos! Atualizado todos os dias.
+### Esse estudo está sendo construido aos poucos!
 
 ---
 
